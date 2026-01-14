@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gridGallery</title>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 150px);
+        /* border: 2px solid red; */
+        gap: 5px;
+      }
+
+      .wide-image {
+        grid-column: span 6;
+        grid-row: span 2;
+      }
+      .normal-image {
+        grid-column: span 2;
+        grid-row: span 2;
+      }
+      .container img {
+        width: 100%;
+        height: 100%;
+      }
+      .small-image {
+        grid-column: span 2;
+        grid-row: span 1;
+      }
+      .smaller-image {
+        grid-column: span 1;
+        grid-row: span 1;
+      }
+
+      @media screen and (max-width: 576px) {
+        .container {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          /* grid-template-rows: repeat(1, 1fr); */
+          gap: 10px;
+        }
+        .wide-image,
+        .small-image,
+        .smaller-image,
+        .normal-image {
+          grid-column: span 1;
+          grid-row: span 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="wide-image">
+        <img src="../images/A.jpg" alt="" />
+      </div>
+      <div class="normal-image">
+        <img src="../images/B.jpg" alt="" />
+      </div>
+      <div class="normal-image">
+        <img src="../images/C.jpg" alt="" />
+      </div>
+      <div class="small-image">
+        <img src="../images/D.jpg" alt="" />
+      </div>
+      <div class="small-image">
+        <img src="../images/E.jpg" alt="" />
+      </div>
+      <div class="normal-image">
+        <img src="../images/F.jpg" alt="" />
+      </div>
+      <div class="smaller-image">
+        <img src="../images/G.jpg" alt="" />
+      </div>
+      <div class="smaller-image">
+        <img src="../images/G.jpg" alt="" />
+      </div>
+      <div class="normal-image">
+        <img src="../images/I.jpg" alt="" />
+      </div>
+      <div class="smaller-image">
+        <img src="../images/G.jpg" alt="" />
+      </div>
+      <div class="smaller-image">
+        <img src="../images/G.jpg" alt="" />
+      </div>
+    </div>
+  </body>
+</html>
