@@ -1,0 +1,49 @@
+.container>* {
+    background-color: antiquewhite;
+    border: 3px solid gold;
+    padding: 30px;
+}
+
+.container {
+    display: grid;
+    /* grid-template-areas: repeat(4, 1fr); */
+    gap: 20px;
+    grid-template-areas:
+        "head head head head"
+        "navbar main main sidebar"
+        "navbar main main Advertising"
+        "footer footer footer footer";
+
+}
+
+header {
+    grid-area: head;
+}
+
+main {
+    grid-area: main;
+}
+
+#sidebar {
+    grid-area: sidebar;
+}
+
+/* aside {
+    grid-area: sidebar;
+} */
+
+#Advertising {
+    grid-area: Advertising;
+}
+
+nav {
+    grid-area: navbar;
+}
+
+footer {
+    grid-area: footer;
+}
+
+/* .navbar {
+    display: flex;
+} */
