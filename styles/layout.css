@@ -16,6 +16,33 @@
 
 }
 
+@media screen and (min-width:576px) and (max-width:991px) {
+    .container {
+
+        grid-template-areas:
+            "head head head"
+            "navbar navbar navbar"
+            "sidebar main main"
+            "Advertising footer footer";
+
+    }
+}
+
+@media screen and (max-width:576px) {
+    .container {
+
+        grid-template-areas:
+            "head"
+            "navbar"
+            "main"
+            "sidebar"
+            "Advertising"
+            "footer";
+    }
+}
+
+
+
 header {
     grid-area: head;
 }
